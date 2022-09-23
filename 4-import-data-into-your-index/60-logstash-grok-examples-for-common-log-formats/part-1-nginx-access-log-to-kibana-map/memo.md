@@ -18,13 +18,15 @@
 
 # **_Show entries on the Map_**
 
+## **Do Explicit Mapping for a "geo_point" type Field**
+
 ![Alt explicit mapping geo_point type ](pic/bandicam%202022-09-23%2013-33-08-647.jpg)
 
-- Before using logstash index data, create an index mapping in Elasticsearch, including a new geo_point type filed.
-
-![Alt logstash conf group lat, lon to one field ](pic/bandicam%202022-09-23%2013-34-44-829.jpg)
+- Because Kibana's Map feature only accepts fields of type "geo_point" as a data source.
 
 ## **Create a field which is geo_point type**
+
+![Alt logstash conf group lat, lon to one field ](pic/bandicam%202022-09-23%2013-34-44-829.jpg)
 
 - add_field can collect values from other fields to the specified field.
   - If the specified field does not exist, a new field will be created.
