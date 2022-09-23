@@ -37,6 +37,8 @@
 ![Alt kibana console check mapping ](pic/bandicam%202022-09-23%2013-36-44-090.jpg)
 
 - The format of the above two maps is required to display the coordinates correctly in the Kibana Map feature.
+- The mapping here is rather special, although "geo_map" has two properties "lat", "lon", which should be an object, theoretically the mapping should be to see "properties..." but here it is "type": "geo_point".
+  - We can't even see the mapping of "lat" and "lon", which is actually defined in the previous level of "type": "geo_point".
 
 ## **Kibana MAP feature**
 
